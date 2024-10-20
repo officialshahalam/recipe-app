@@ -21,8 +21,8 @@ export default async function RecipeDetails({params}) {
         <Button className="my-6">
             <Link href={"/recipe-list"}>Go to Recipe List</Link>
         </Button>
-        <div className="flex gap-12">
-            <img src={recipeDetails.image} className="w-1/2"/>
+        <div className="flex flex-col-reverse lg:flex-row gap-12 pb-[50px]">
+            <img src={recipeDetails.image} className="w-full lg:w-1/2"/>
             <div className="flex flex-col gap-4">
                 <h1 className="text-3xl font-bold">{recipeDetails.name}</h1>
                 <p className="text-xl font-medium">{recipeDetails.mealType[0]}</p>
